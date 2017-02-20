@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. AutoCompletedTextView"
+        android:id="@+id/anchorTextView"
+        />
+    <AutoCompleteTextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:completionHint="下拉提示标题"
+        android:completionThreshold="1"
+        android:dropDownAnchor="@+id/anchorTextView"
+        android:dropDownHeight="200dp"
+        android:dropDownWidth="200dp"
+        android:dropDownHorizontalOffset="100dp"
+        android:dropDownVerticalOffset="30dp"
+        android:dropDownSelector="@drawable/selector_auto_text_view"
+        android:popupBackground="@drawable/shape_auto_text_view"
+        android:id="@+id/autoCompletedTextView"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. MultiAutoCompleteTextView"/>
+    <MultiAutoCompleteTextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:completionThreshold="1"
+        android:id="@+id/multiAutoCompleteTextView"
+        />
+
+</LinearLayout>
